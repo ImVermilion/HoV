@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Cartas - Duelo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="opponent-area">
+    <div id="hand-opponent"></div>
+    <div id="zones-opponent">
+      <div class="object-zone" id="object-left-opponent">
+        <div class="zone-title">Objeto Izq.</div>
+        <div class="object-slot" data-side="left"></div>
+      </div>
+      <div id="main-board-opponent">
+        <div id="creature-board-opponent">
+          <div class="creature-zone">
+            <div class="zone-title">Criatura 1</div>
+            <div class="creature-slot" data-slot="0"></div>
+            <div class="equip-slot" data-equip="0"></div>
+          </div>
+          <div class="creature-zone">
+            <div class="zone-title">Criatura 2</div>
+            <div class="creature-slot" data-slot="1"></div>
+            <div class="equip-slot" data-equip="1"></div>
+          </div>
+          <div class="creature-zone">
+            <div class="zone-title">Criatura 3</div>
+            <div class="creature-slot" data-slot="2"></div>
+            <div class="equip-slot" data-equip="2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="object-zone" id="object-right-opponent">
+        <div class="zone-title">Objeto Dcha.</div>
+        <div class="object-slot" data-side="right"></div>
+      </div>
+      <div id="environment-zone-opponent">
+        <div class="zone-title">Ambiente</div>
+        <div class="environment-slot"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="player-area">
+    <div id="zones">
+      <div class="object-zone" id="object-left">
+        <div class="zone-title">Objeto Izq.</div>
+        <div class="object-slot" data-side="left"></div>
+      </div>
+      <div id="main-board">
+        <div id="creature-board">
+          <div class="creature-zone">
+            <div class="zone-title">Criatura 1</div>
+            <div class="creature-slot" data-slot="0"></div>
+            <div class="equip-slot" data-equip="0"></div>
+          </div>
+          <div class="creature-zone">
+            <div class="zone-title">Criatura 2</div>
+            <div class="creature-slot" data-slot="1"></div>
+            <div class="equip-slot" data-equip="1"></div>
+          </div>
+          <div class="creature-zone">
+            <div class="zone-title">Criatura 3</div>
+            <div class="creature-slot" data-slot="2"></div>
+            <div class="equip-slot" data-equip="2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="object-zone" id="object-right">
+        <div class="zone-title">Objeto Dcha.</div>
+        <div class="object-slot" data-side="right"></div>
+      </div>
+      <div id="environment-zone">
+        <div class="zone-title">Ambiente</div>
+        <div class="environment-slot"></div>
+      </div>
+    </div>
+    <div id="hand"></div>
+  </div>
+
+  <div id="sp-area">
+    <div class="resource-label">Puntos Invocador</div>
+    <div id="sp-display" class="resource-display">0 / 0</div>
+  </div>
+  <div id="deck-area">
+    <div id="deck">
+      <div id="deck-count"></div>
+    </div>
+    <div class="resource-label">Mazo</div>
+  </div>
+  <div id="life-area">
+      <div class="resource-label">Vida</div>
+      <div id="player-life-display" class="life-display">20</div>
+  </div>
+
+  <div id="sp-area-opponent">
+    <div class="resource-label">Puntos Invocador</div>
+    <div id="sp-display-opponent" class="resource-display">0 / 0</div>
+  </div>
+  <div id="deck-area-opponent">
+    <div id="deck-opponent">
+      <div id="deck-count-opponent"></div>
+    </div>
+    <div class="resource-label">Mazo</div>
+  </div>
+   <div id="life-area-opponent">
+    <div class="resource-label">Vida</div>
+    <div id="opponent-life-display" class="life-display">20</div>
+  </div>
+
+  <div id="music-player-container">
+    <div id="music-toggle-icon">🎵</div>
+    <span id="current-song-title"></span>
+  </div>
+
+  <div id="message"></div>
+  <div id="modal-bg" class="hidden"></div>
+  <div id="modal" class="hidden">
+    <div id="modal-content"></div>
+    <button id="modal-cancel">Cancelar</button>
+    <button id="modal-ok">Aceptar</button>
+  </div>
+  <div id="turn-bar"></div>
+
+  <audio id="background-music" preload="auto"></audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
