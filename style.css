@@ -4,8 +4,8 @@
 }
 
 body {
-  background-image: url("background.png");
-  background-size: cover;
+  background-image: url("img/bg.jpg");
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -41,10 +41,10 @@ body {
   margin-bottom: 2rem;
 }
 #player-area #zones {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 #opponent-area #zones-opponent {
-    margin-bottom: 8rem;
+    margin-bottom: 15rem;
 }
 
 #main-board, #main-board-opponent { display: flex; flex-direction: column; align-items: center; }
@@ -61,7 +61,7 @@ body {
 .zone-title {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #ccc;
+    color: #000000;
 }
 
 #opponent-area .zone-title,

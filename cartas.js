@@ -14,7 +14,7 @@ const deckRaw = [
   {
     nombre: "Firia",
     ataque: 2,
-    defensa: 1,
+    defensa: 0,
     elemento: "fuego",
     tipo: "bestia",
     nivel: 2,
@@ -23,7 +23,7 @@ const deckRaw = [
   },
   {
     nombre: "Lumina",
-    ataque: 1,
+    ataque: 0,
     defensa: 2,
     elemento: "luz",
     tipo: "heroe",
@@ -35,6 +35,11 @@ const deckRaw = [
   {
     nombre: "Espada Sagrada",
     descripcion: "Equipamiento: +1 ATK. Solo una por criatura.",
+    categoria: "equipamiento"
+  },
+  {
+    nombre: "Escudo Sagrado",
+    descripcion: "Equipamiento: +1 DEF. Solo una por criatura.",
     categoria: "equipamiento"
   },
   // Consumible

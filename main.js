@@ -3,14 +3,16 @@
 // ==== Datos de las cartas ====
 const deckRaw = [
     { nombre: "Skuller", ataque: 1, defensa: 1, elemento: "oscuridad", tipo: "zombie", nivel: 1, categoria: "criatura", descripcion: "Un zombi débil pero fiel." },
-    { nombre: "Firia", ataque: 2, defensa: 1, elemento: "fuego", tipo: "bestia", nivel: 2, categoria: "criatura", descripcion: "Bestia ígnea de colmillos ardientes." },
-    { nombre: "Lumina", ataque: 1, defensa: 2, elemento: "luz", tipo: "heroe", nivel: 1, categoria: "criatura", descripcion: "Guardián radiante de los inocentes." },
-    { nombre: "Caballero Valiente", ataque: 3, defensa: 4, elemento: "luz", tipo: "heroe", nivel: 3, categoria: "criatura", descripcion: "Defensor implacable de su reino." },
-    { nombre: "Dragón de Magma", ataque: 5, defensa: 4, elemento: "fuego", tipo: "dragon", nivel: 5, categoria: "criatura", descripcion: "Su aliento derrite la roca." },
+    { nombre: "Firia", ataque: 2, defensa: 0, elemento: "fuego", tipo: "bestia", nivel: 2, categoria: "criatura", descripcion: "Bestia ígnea de colmillos ardientes." },
+    { nombre: "Lumina", ataque: 0, defensa: 2, elemento: "luz", tipo: "heroe", nivel: 1, categoria: "criatura", descripcion: "Guardián radiante de los inocentes." },
+    { nombre: "Caballero Valiente", ataque: 1, defensa: 4, elemento: "luz", tipo: "heroe", nivel: 3, categoria: "criatura", descripcion: "Defensor implacable de su reino." },
+    { nombre: "Dragón de Magma", ataque: 5, defensa: 2, elemento: "fuego", tipo: "dragon", nivel: 5, categoria: "criatura", descripcion: "Su aliento derrite la roca." },
     { nombre: "Espada Sagrada", categoria: "equipamiento", nivel: 2, efectos: { atk: 1 }, descripcion: "Equipamiento: +1 ATK." },
+    { nombre: "Escudo Sagrado", categoria: "equipamiento", nivel: 2, efectos: { def: 1 }, descripcion: "Equipamiento: +1 DEF." },
     { nombre: "Tótem Arcano", categoria: "activo", nivel: 3, efectos: { def: 1, global: true }, descripcion: "Tus criaturas ganan +1 DEF." },
     { nombre: "Estatua Maldita", categoria: "activo", nivel: 4, efectos: { atk: -1, global: true }, descripcion: "Todas las criaturas pierden 1 ATK." },
-    { nombre: "Niebla Encantada", categoria: "ambiente", nivel: 2, efectos: { atk: -1, global: true }, descripcion: "Las criaturas pierden 1 ATK." }
+    { nombre: "Niebla Encantada", categoria: "ambiente", nivel: 2, efectos: { atk: -1, global: true }, descripcion: "Las criaturas pierden 1 ATK." },
+    { nombre: "Numina", ataque: 6, defensa: 1, elemento: "fuego", tipo: "hechicero", nivel: 6, categoria: "criatura", descripcion: "Una poderosa hechicera Hin" }
 ];
 
 // ==== Variables de Estado del Juego ====
@@ -851,9 +853,11 @@ function initGame() {
 }
 
 const playlist = [
-    { src: 'music/battle-theme-a.mp3', title: 'El Despertar del Duelo' },
-    { src: 'music/mystery-dungeon.mp3', title: 'Bosque Misterioso' },
-    { src: 'music/final-stand.mp3', title: 'La Última Batalla' }
+    { src: 'music/Fables-in-the-Flickerlight.mp3', title: 'Fables in the Flickerlight' },
+    { src: 'music/Luck_on-the-Table.mp3', title: 'Luck on the Table' },
+    { src: 'music/Raise-a-Card-Raise-a-Glass.mp3', title: 'Raise a Card, Raise a Glass' },
+    { src: 'music/Shuffle-&-Cheers!.mp3', title: 'Shuffle & Cheers!' },
+    { src: 'music/The_Joyful_Gambit.mp3', title: 'The Joyful Gambit' }
 ];
 let currentTrackIndex = -1;
 let musicPlayer;

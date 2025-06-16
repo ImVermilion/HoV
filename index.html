@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juego de Cartas - Duelo</title>
+  <title>Heroes of the Void</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -129,5 +129,10 @@
   <audio id="background-music" preload="auto"></audio>
 
   <script src="main.js"></script>
+  <script>window.addEventListener('wheel', function(e) {
+  if (e.ctrlKey) {
+    e.preventDefault();
+  }
+}, { passive: false });</script>
 </body>
 </html>
