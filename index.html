@@ -126,13 +126,16 @@
   </div>
   <div id="turn-bar"></div>
 
-  <audio id="background-music" preload="auto"></audio>
+  <audio id="background-music" preload="auto" loop></audio>
 
+  <script src="cartas.js"></script>
   <script src="main.js"></script>
   <script>window.addEventListener('wheel', function(e) {
-  if (e.ctrlKey) {
-    e.preventDefault();
-  }
-}, { passive: false });</script>
+    if (e.ctrlKey) {
+      e.preventDefault();
+    }
+  }, { passive: false });</script>
+  <canvas id="attack-arrow" style="position:fixed; left:0; top:0; width:100vw; height:100vh; pointer-events:none; z-index:2000;"></canvas>
+
 </body>
 </html>
